@@ -1,0 +1,135 @@
+@use 'variables' as *;
+
+#page-auth {
+  align-items: stretch;
+  display: flex;
+  height: 100vh;
+
+  aside {
+    background: $colorDefault;
+    color: #fff;
+    display: flex;
+    flex: 7;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 80px;
+
+    img {
+      max-width: 320px;
+    }
+
+    strong {
+      font: 700 36px $fontSecondary;
+      line-height: 42px;
+      margin-top: 1rem;
+    }
+
+    p {
+      color: $bgPrimary;
+      font-size: 1.5rem;
+      line-height: 32px;
+      margin-top: 1rem;
+    }
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    flex: 8;
+    justify-content: center;
+    padding: 0 2rem;
+
+    .main__content {
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      max-width: 320px;
+      text-align: center;
+      width: 100%;
+
+      .create-room {
+        align-items: center;
+        background: #ea4335;
+        border: 0;
+        border-radius: 0.5rem;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-weight: 500;
+        height: 50px;
+        justify-content: center;
+        margin-top: 4rem;
+        transition: filter 0.2s;
+
+        img {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+
+      .separator {
+        align-items: center;
+        color: $gray;
+        display: flex;
+        font-size: 14px;
+        margin: 2rem 0;
+        &::before {
+          background: $gray;
+          content: "";
+          flex: 1;
+          height: 1px;
+          margin-right: 1rem;
+        }
+        &::after {
+          background: $gray;
+          content: "";
+          flex: 1;
+          height: 1px;
+          margin-left: 1rem;
+        }
+      }
+
+      > img {
+        align-self: center;
+      }
+
+      h2 {
+        font-family: $fontSecondary;
+        font-size: 1.5rem;
+        margin: 4rem 0 1.5rem;
+      }
+
+      form {
+        input {
+          background: #fff;
+          border: 1px solid $gray;
+          border-radius: 0.5rem;
+          height: 50px;
+          padding: 0 1rem;
+        }
+
+        button {
+          margin-top: 1rem;
+        }
+
+        button,
+        input {
+          width: 100%;
+        }
+      }
+
+      p {
+        color: #737380;
+        font-size: 14px;
+        margin-top: 1rem;
+
+        a {
+          color: #e559f9;
+        }
+      }
+    }
+  }
+}
