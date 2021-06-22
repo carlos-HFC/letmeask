@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bgPrimary;
+  color: $colorPrimary;
+}
+
+body,
+button,
+input,
+textarea {
+  font: 400 16px $fontPrimary;
+}
