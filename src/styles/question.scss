@@ -10,6 +10,21 @@
     margin-top: 0.5rem;
   }
 
+  &.highlighted {
+    background: #f4f0ff;
+    border: 1px solid $colorDefault;
+
+    .user-info {
+      span {
+        color: $colorPrimary;
+      }
+    }
+  }
+
+  &.answered {
+    background: #dbdcdd;
+  }
+
   p {
     color: $colorPrimary;
   }
@@ -35,6 +50,11 @@
         font-size: 14px;
         margin-left: 0.5rem;
       }
+    }
+
+    > div {
+      display: flex;
+      gap: 1rem;
     }
 
     button {
